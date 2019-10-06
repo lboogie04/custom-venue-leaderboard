@@ -63,7 +63,7 @@ class Leaderboard extends React.Component {
         {contestants.map((contestant, i) => {
           return (<LeaderboardContestant
             key={i}
-            name={contestant.user.first_name}
+            name={contestant.user.username}
             avatar={contestant.user.profile_picture}
             position={contestant.final_position}
             points={contestant.final_points}
