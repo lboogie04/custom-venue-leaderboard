@@ -54,7 +54,7 @@ class Score extends React.Component {
 
   startTimer(duration, display) {
     var timer = duration, minutes, seconds;
-    var countDownDate = new Date("Jan 5, 2021 19:00:00").getTime();
+    var countDownDate = new Date("Jan 5, 2021 15:25:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -97,7 +97,7 @@ class Score extends React.Component {
            {/* <img src={nashville_logo} className="team-logo" alt="gameon-logo" /> */}
            <img src={packers} className="team-logo" style={logoStyle} alt="gameon-logo" />
            </Row>
-           <Row className='score-block'> <span>{this.state.match.visitor_team_points}</span></Row>
+           <Row className='score-block'> <span>{this.state.match.visitor_team_points || 0}</span></Row>
          </Col>
          
          {gameStatus}
@@ -108,7 +108,7 @@ class Score extends React.Component {
              {/* <img src={kings_logo} className="team-logo-vertical" alt="gameon-logo" /> */}
              <img src={cowboys} className="team-logo" alt="gameon-logo" />
            </Row>
-           <Row className='score-block'><span>{this.state.match.home_team_points}</span></Row>
+           <Row className='score-block'><span>{this.state.match.home_team_points || 0}</span></Row>
          </Col>
         </Row>
 
