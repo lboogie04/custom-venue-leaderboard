@@ -21,6 +21,7 @@ class Score extends React.Component {
     };
 
     this.fetchMatch = this.fetchMatch.bind(this);
+    this.properSuffix = this.properSuffix.bind(this);
   }
 
   componentDidMount() {
@@ -77,10 +78,27 @@ class Score extends React.Component {
     }, 1000);
   }
 
+  properSuffix(int) {
+    switch(int) {
+      case(1):
+        return "1st"
+        break;
+       case(2):
+        return "2nd"
+        break;
+       case(3):
+        return "3rd"
+        break;
+      case(4):
+        return "4th"
+        break;
+    }
+  }
+
   render() {
     let gameStatus = this.state.match.status == "Pending" ? 
                       <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> :
-                      <Col className='time-period-block' xs={2}><span id="time">{this.state.match.current_increment}<br/>{this.state.match.time_increment}</span></Col>
+                      <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.current_increment)}<br/>{this.state.match.time_increment}</span></Col>
     return (
       <div className='score-section'>
         <Row className='logos'>
