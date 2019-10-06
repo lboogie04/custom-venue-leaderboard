@@ -8,16 +8,16 @@ class LogoBox extends React.Component {
       <div className='prizes'>
         <Row>
           <Col xs={3}>
-            <img src={kings_prize} className="prize-logo" alt="prize-image" />
+            <img src={kings_prize} className="prize-logo" alt="" />
           </Col>
           <Col xs={3}>
-            <img src={kings_prize} className="prize-logo" alt="prize-image" />
+            <img src={kings_prize} className="prize-logo" alt="" />
           </Col>
           <Col xs={3}>
-            <img src={kings_prize} className="prize-logo" alt="prize-image" />
+            <img src={kings_prize} className="prize-logo" alt="" />
           </Col>
           <Col xs={3}>
-            <img src={kings_prize} className="prize-logo" alt="prize-image" />
+            <img src={kings_prize} className="prize-logo" alt="" />
           </Col>
         </Row>
       </div>

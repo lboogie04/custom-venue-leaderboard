@@ -111,6 +111,23 @@
   margin-top: 15px;
 }
 
+.position {
+  margin-top: 3%;
+}
+
+.user-info {
+  text-align: left;
+}
+
+.avatar {
+  width: 100px;
+  margin-right: 10px;
+}
+
+.points {
+  margin-top: 3%;
+}
+
 
 
 .prize-section {

@@ -1,13 +1,18 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import gameon_avatar from '../images/gameon_avatar.png';
 
 
 export function LeaderboardContestant(props) {
+  let avatar = props.avatar === "" ? gameon_avatar : props.avatar
   return (
-    <Row className='contestant'>
-      <Col>{props.position}</Col>
-      <Col xs={6}>{props.name}</Col>
-      <Col>{props.points}</Col>
+    <Row className='contestant' >
+      <Col className='position'>{props.position}</Col>
+      <Col xs={6} className='user-info'>
+      <img src={avatar} className="avatar" alt="user-avatar" />
+        {props.name}
+      </Col>
+      <Col className='points'>{props.points}</Col>
     </Row>
     )
 }
@@ -25,7 +30,7 @@ class Leaderboard extends React.Component {
 
   componentDidMount() {
     this.fetchContestants();
-    this.timer = setInterval(() => this.fetchContestants(), 5000);
+    // this.timer = setInterval(() => this.fetchContestants(), 5000);
   }
 
   fetchContestants() {
@@ -37,36 +42,34 @@ class Leaderboard extends React.Component {
       headers: new Headers()
   }
   let currentComponent = this;
-
+  this.setState({isLoading: true});
   fetch(url, fetchData)
     .then((resp) => resp.json())
     .then(function(data) {
       console.log(data)
-      currentComponent.setState({contestants: data})
+      currentComponent.setState({
+        contestants: data,
+        isLoading: false})
     })
 
   }
 
   render() {
+    const { contestants } = this.state;
     return (
       <div className='leaderboard-section'>
         <div className='leaderboard'>
         <p>Leaderboard</p>
-        <LeaderboardContestant
-          name='Lawrence'
-          position='1'
-          points='1730'
-          />
-          <LeaderboardContestant
-          name='Jessica'
-          position='2'
-          points='1730'
-          />
-          <LeaderboardContestant
-          name='Robert'
-          position='3'
-          points='1730'
-          />
+        {contestants.map((contestant, i) => {
+          return (<LeaderboardContestant
+            key={i}
+            name={contestant.user.first_name}
+            avatar={contestant.user.profile_picture}
+            position={contestant.final_position}
+            points={contestant.final_points}
+          />)
+        })
+       }
         </div>
       </div>
     )
