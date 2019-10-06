@@ -1,12 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import Score from './components/Score';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Row, Col } from 'react-bootstrap';
 import './App.css';
+import Leaderboard from './components/Leaderboard';
+import LogoBox from './components/LogoBox';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <Row className='top-section'>
+          <Col xs={8}>
+            <Score />
+          </Col>
+          <Col>
+            <Leaderboard />
+          </Col>
+        </Row>
+        <Row className='prize-section'>
+          <LogoBox />
+        </Row>
+        {/* <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -17,7 +33,7 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </a> */}
       </header>
     </div>
   );

@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -7,16 +7,129 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0F0E18;
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
+  border-color: #686A6B;
+  border-width: thick;
+  border-style: solid;
+  border-radius: 5px;
 }
 
 .App-link {
   color: #09d3ac;
+}
+
+.top-section {
+  margin-top: 25px;
+}
+
+.score-section {
+  display: inline-block;
+  width: 100%;
+}
+
+.logos {
+  text-align: center;
+  display: block;
+  font-size: 36px;
+}
+
+.gameon-logo {
+  margin-right: 20px;
+}
+
+.toms-logo {
+  margin-left: 20px;
+}
+
+.teams {
+  text-align: center;
+  margin-top: 10%;
+}
+
+.team-block {
+  display: block;
+  text-align: center;
+  min-height: 250px;
+  /* position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%); */
+}
+
+.score-block {
+  text-align: center;
+  display: block;
+  min-height: 50px;
+  margin-top: 30px;
+ font-size: 120px;
+ font-weight: bold;
+}
+
+.time-period-block {
+  position: relative;
+}
+
+.time-period-block span {
+  position: absolute;
+  bottom: 20%;
+  right: 25%;
+  line-height: 36px;
+  font-size: 36px;
+}
+
+.team-logo {
+  width: 245px;
+}
+
+.team-logo-vertical {
+  width: 215px;
+}
+
+
+
+.leaderboard-section {
+  display: inline-block;
+  width: 100%;
+}
+.leaderboard {
+  min-width: 100px;
+  min-height: 100px;
+  height: auto;
+  background: #191822;
+  padding: 25px;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.contestant {
+  margin-top: 15px;
+}
+
+
+
+.prize-section {
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.prizes {
+  margin-right: 25px;
+  margin-left: 25px;
+  background: #191822;
+  min-height: 100px;
+  width: 100%;
+
+}
+
+.prize-logo {
+  width: 40%;
+  margin: 15px;
 }
