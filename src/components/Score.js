@@ -25,7 +25,7 @@ class Score extends React.Component {
 
   componentDidMount() {
     this.fetchMatch();
-    // this.timer = setInterval(() => this.fetchMatch(), 5000);
+    this.timer = setInterval(() => this.fetchMatch(), 5000);
     var fiveMinutes = 60 * 5,
     display = document.querySelector('#time');
     this.startTimer(fiveMinutes, display);
