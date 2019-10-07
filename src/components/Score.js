@@ -99,16 +99,16 @@ class Score extends React.Component {
 
   properSuffix(int) {
     switch(int) {
-      case(1):
+      case("1"):
         return "1st"
         break;
-       case(2):
+       case("2"):
         return "2nd"
         break;
-       case(3):
+       case("3"):
         return "3rd"
         break;
-      case(4):
+      case("4"):
         return "4th"
         break;
     }
