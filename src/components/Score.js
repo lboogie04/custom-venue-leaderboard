@@ -116,6 +116,9 @@ class Score extends React.Component {
       case("4"):
         return "4th"
         break;
+      case("HALF"):
+        return "Halftime"
+        break;
     }
   }
 
