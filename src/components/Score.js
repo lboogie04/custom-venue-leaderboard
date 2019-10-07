@@ -12,6 +12,11 @@ const logoStyle = {
   marginTop: '10%'
 };
 
+const lasPlay = {
+  textAlign: 'center',
+  display: 'block'
+}
+
 class Score extends React.Component {
   constructor(props) {
     super(props);
@@ -67,7 +72,7 @@ class Score extends React.Component {
       .then(function(data) {
         console.log(data[13])
         currentComponent.setState({
-          match: data,
+          match: data[13],
           isLoading: false})
       })
   }
@@ -134,10 +139,11 @@ class Score extends React.Component {
            {/* <img src={nashville_logo} className="team-logo" alt="gameon-logo" /> */}
            <img src={colts} className="team-logo" style={logoStyle} alt="gameon-logo" />
            </Row>
-           <Row className='score-block'> <span>{this.state.AwayScore || 0}</span></Row>
+           <Row className='score-block'> <span>{this.state.match.AwayScore || 0}</span></Row>
          </Col>
          
-         {gameStatus}
+         {/* {gameStatus} */}
+         <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.Quarter)}<br/>Quarter</span></Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 
          <Col xs={5}>
@@ -145,11 +151,12 @@ class Score extends React.Component {
              {/* <img src={kings_logo} className="team-logo-vertical" alt="gameon-logo" /> */}
              <img src={kc} className="team-logo" alt="gameon-logo" />
            </Row>
-           <Row className='score-block'><span>{this.state.HomeScore || 0}</span></Row>
+           <Row className='score-block'><span>{this.state.match.HomeScore || 0}</span></Row>
          </Col>
         </Row>
-        <Row>
-          {this.state.LastPlay}
+        <Row style={lasPlay}>
+          <h3>Last Play:</h3>
+         <p>{this.state.match.LastPlay}</p> 
         </Row>
 
 
