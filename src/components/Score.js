@@ -72,7 +72,7 @@ class Score extends React.Component {
       .then(function(data) {
         console.log(data[data.length - 1])
         currentComponent.setState({
-          match: data[13],
+          match: data[data.length - 1],
           isLoading: false})
       })
   }
