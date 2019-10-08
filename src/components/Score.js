@@ -31,7 +31,7 @@ class Score extends React.Component {
 
   componentDidMount() {
     this.fetchMatch();
-    // this.timer = setInterval(() => this.fetchMatch(), 15000);
+    this.timer = setInterval(() => this.fetchMatch(), 15000);
     // var fiveMinutes = 60 * 5,
     // display = document.querySelector('#time');
     // this.startTimer(fiveMinutes, display);
@@ -70,7 +70,7 @@ class Score extends React.Component {
     fetch(url, fetchData)
       .then((resp) => resp.json())
       .then(function(data) {
-        console.log(data[13])
+        console.log(data[data.length - 1])
         currentComponent.setState({
           match: data[13],
           isLoading: false})
