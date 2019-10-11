@@ -12,7 +12,8 @@ const logoStyle = {
 
 const lasPlay = {
   textAlign: 'center',
-  display: 'block'
+  display: 'block',
+  marginTop: '5%'
 }
 
 class Score extends React.Component {
@@ -144,7 +145,7 @@ class Score extends React.Component {
          </Col>
          
          {/* {gameStatus} */}
-         <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.Quarter)}<br/>Quarter</span></Col>
+         <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.Quarter)}<br/>Period</span></Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 
          <Col xs={5}>
@@ -155,8 +156,9 @@ class Score extends React.Component {
          </Col>
         </Row>
         <Row style={lasPlay}>
-          <h3>1. Download at Gameon.app/Toms</h3>
-          <h3>2. Click "Play at the bar" & enter the bar code:<br/>  TOMS</h3>
+          <h3 className="download-instruction">1. Download at Gameon.app/Toms</h3>
+          <h3 className="download-instruction">2. Click "Play at the bar" & enter the bar code:</h3>
+          <h3 className="bar-code">TOMS</h3>
         </Row>
 
 

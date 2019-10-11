@@ -91,6 +91,17 @@
   width: 215px;
 }
 
+.download-instruction {
+  font-family: 'LemonMilk';
+  line-height: 2.5rem;
+  font-size: 1.9rem;
+}
+
+.bar-code {
+  font-family: 'GothamBold';
+  font-size: 50px;
+}
+
 
 
 .leaderboard-section {
@@ -124,7 +135,7 @@
 }
 
 .position {
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 .user-info {
@@ -138,7 +149,7 @@
 }
 
 .points {
-  margin-top: 3%;
+  margin-top: 1%;
 }
 
 

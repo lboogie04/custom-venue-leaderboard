@@ -1,8 +1,12 @@
 @font-face {
-  font-family: 'Gotham';
-  
+  font-family: 'LemonMilk';
+  src: local('LemonMilk'), url(./fonts/LemonMilkbold.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'GothamBold';
+  src: local('GothamBold'), url(./fonts/Gotham-Bold.otf) format('truetype');
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
