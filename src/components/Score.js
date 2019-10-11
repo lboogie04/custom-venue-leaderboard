@@ -16,6 +16,10 @@ const lasPlay = {
   marginTop: '1%'
 }
 
+const weirdLogo = {
+  paddingTop: '15%'
+}
+
 class Score extends React.Component {
   constructor(props) {
     super(props);
@@ -139,7 +143,7 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           <img src={nashville_logo} className="team-logo" alt="gameon-logo" />
+           <img src={nashville_logo} className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
            <Row className='score-block'> <span>{this.state.match.AwayScore || 0}</span></Row>
          </Col>
