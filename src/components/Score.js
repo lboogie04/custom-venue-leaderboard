@@ -13,7 +13,7 @@ const logoStyle = {
 const lasPlay = {
   textAlign: 'center',
   display: 'block',
-  marginTop: '2%'
+  marginTop: '1%'
 }
 
 class Score extends React.Component {
