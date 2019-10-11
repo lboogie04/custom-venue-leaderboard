@@ -159,6 +159,18 @@
 }
 
 .prize-logo {
-  width: 40%;
+  width: 45%;
   margin: 15px;
+}
+
+.deal-details {
+  padding: 20px 0;
+}
+
+.deal-title {
+  font-weight: bold;
+}
+
+.deal-explanation {
+  font-size: 1.4rem;
 }

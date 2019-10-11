@@ -4,8 +4,6 @@ import Gameon_White from '../images/Gameon_White.png';
 import Toms_Watch_Bar from '../images/Toms_Watch_Bar.png';
 import nashville_logo from '../images/team-logos/nashville_logo.png';
 import kings_logo from '../images/team-logos/kings_logo.png';
-import colts from '../images/team-logos/colts.png';
-import kc from '../images/team-logos/kc.png';
 
 
 const logoStyle = {
@@ -22,7 +20,8 @@ class Score extends React.Component {
     super(props);
     this.state = {
         isLoading: false,
-        match: {}
+        match: {},
+
     };
 
     this.fetchMatch = this.fetchMatch.bind(this);
@@ -139,8 +138,7 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           {/* <img src={nashville_logo} className="team-logo" alt="gameon-logo" /> */}
-           <img src={colts} className="team-logo" style={logoStyle} alt="gameon-logo" />
+           <img src={nashville_logo} className="team-logo" alt="gameon-logo" />
            </Row>
            <Row className='score-block'> <span>{this.state.match.AwayScore || 0}</span></Row>
          </Col>
@@ -151,15 +149,14 @@ class Score extends React.Component {
 
          <Col xs={5}>
            <Row className='team-block'>
-             {/* <img src={kings_logo} className="team-logo-vertical" alt="gameon-logo" /> */}
-             <img src={kc} className="team-logo" alt="gameon-logo" />
+             <img src={kings_logo} className="team-logo-vertical" alt="gameon-logo" />
            </Row>
            <Row className='score-block'><span>{this.state.match.HomeScore || 0}</span></Row>
          </Col>
         </Row>
         <Row style={lasPlay}>
-          <h3>Last Play:</h3>
-         <p>{this.state.match.LastPlay}</p> 
+          <h3>1. Download at Gameon.app/Toms</h3>
+          <h3>2. Click "Play at the bar" & enter the bar code:<br/> <br/> TOMS</h3>
         </Row>
 
 
