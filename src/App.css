@@ -100,7 +100,8 @@
 .leaderboard {
   min-width: 100px;
   min-height: 100px;
-  height: auto;
+  max-height: 700px;
+  height: 700px;
   background: #191822;
   padding: 25px;
   margin-right: 25px;

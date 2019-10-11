@@ -156,7 +156,7 @@ class Score extends React.Component {
         </Row>
         <Row style={lasPlay}>
           <h3>1. Download at Gameon.app/Toms</h3>
-          <h3>2. Click "Play at the bar" & enter the bar code:<br/> <br/> TOMS</h3>
+          <h3>2. Click "Play at the bar" & enter the bar code:<br/>  TOMS</h3>
         </Row>
 
 
