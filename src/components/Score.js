@@ -106,7 +106,7 @@ class Score extends React.Component {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         display.textContent = hours + ":" + minutes + ":" + seconds;
-        display.innerHTML += "<br/> to start"
+        display.innerHTML += "<br/> til puck drops"
 
     if (distance < 0) {
       clearInterval(x);
