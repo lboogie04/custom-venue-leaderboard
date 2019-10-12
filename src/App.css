@@ -114,12 +114,12 @@
   min-width: 100px;
   min-height: 100px;
   max-height: 700px;
-  height: 600px;
+  height: 650px;
   background: #191822;
   padding: 25px;
   margin-right: 25px;
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .leaderboard::-webkit-scrollbar-track {
@@ -183,7 +183,7 @@
 
 .deal-title {
   font-weight: bold;
-  font-size: 1.0rem;
+  font-size: 0.9rem;
   font-family: 'GothamBold';
 }
 
