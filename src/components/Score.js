@@ -26,6 +26,7 @@ class Score extends React.Component {
     this.state = {
         isLoading: false,
         match: {},
+        gameStarted: false
 
     };
 
@@ -36,9 +37,14 @@ class Score extends React.Component {
   componentDidMount() {
     this.fetchMatch();
     // this.timer = setInterval(() => this.fetchMatch(), 15000);
+    if (this.state.gameStarted == false) {
+      var fiveMinutes = 60 * 5;
+      var display = document.querySelector('#time');
+      this.startTimer(fiveMinutes, display);
     // var fiveMinutes = 60 * 5,
     // display = document.querySelector('#time');
     // this.startTimer(fiveMinutes, display);
+    }
   }
 
   fetchMatch() {
@@ -63,7 +69,7 @@ class Score extends React.Component {
     //   })
 
     //Fetching from SportsData
-    const url = 'https://api.sportsdata.io/v3/nfl/scores/json/ScoresByWeek/2019REG/5?key=10a1c8e6450b4be7a01a81026bbc78f0';
+    const url = 'https://api.sportsdata.io/v3/nhl/scores/json/GamesByDate/2019-10-12?key=8246e5284f1c47d2b6f54cfedb68292d';
     let fetchData = { 
       method: 'GET', 
       // body: {match_id: 7283},
@@ -74,16 +80,18 @@ class Score extends React.Component {
     fetch(url, fetchData)
       .then((resp) => resp.json())
       .then(function(data) {
-        console.log(data[data.length - 1])
+        console.log(data[2])
         currentComponent.setState({
-          match: data[data.length - 1],
+          match: data[2],
+          gameStarted: data[2].Status == 'Scheduled' ? false : true,
           isLoading: false})
       })
   }
 
   startTimer(duration, display) {
+    let currentComponent = this;
     var timer = duration, minutes, seconds;
-    var countDownDate = new Date("Jan 5, 2021 14:25:00").getTime();
+    var countDownDate = new Date("Oct 12, 2019 17:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -101,7 +109,8 @@ class Score extends React.Component {
 
     if (distance < 0) {
       clearInterval(x);
-      document.querySelector('#time').innerHTML = "EXPIRED";
+      currentComponent.setState({gameStarted: true})
+      // document.querySelector('#time').innerHTML = "EXPIRED";
     }
     }, 1000);
   }
