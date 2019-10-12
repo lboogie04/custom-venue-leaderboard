@@ -158,7 +158,7 @@
 
 .prize-section {
   position: absolute;
-  bottom: -10px;
+  bottom: 8px;
   width: 100%;
   margin-left: 0;
 }
@@ -183,9 +183,10 @@
 
 .deal-title {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  font-family: 'GothamBold';
 }
 
 .deal-explanation {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
