@@ -35,8 +35,8 @@ class Score extends React.Component {
   }
 
   componentDidMount() {
-    this.fetchMatch();
-    // this.timer = setInterval(() => this.fetchMatch(), 15000);
+    // this.fetchMatch();
+    this.timer = setInterval(() => this.fetchMatch(), 15000);
     if (this.state.gameStarted == false) {
       var fiveMinutes = 60 * 5;
       var display = document.querySelector('#time');
