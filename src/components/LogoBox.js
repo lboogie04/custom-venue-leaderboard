@@ -43,7 +43,7 @@ class LogoBox extends React.Component {
             <img src={FIFTYOFF} className="prize-logo" alt="" />
             <div className="deal-details">
                 <h3 className="deal-title">Pick the Most Right</h3>
-                <p className="deal-explanation">$25 off your entire check <br />(up to $50) </p>
+                <p className="deal-explanation">$25 off your check <br />(up to $50) </p>
               </div>
             </Row>
           </Col>
