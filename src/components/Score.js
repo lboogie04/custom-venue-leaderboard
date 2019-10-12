@@ -13,7 +13,7 @@ const logoStyle = {
 const lasPlay = {
   textAlign: 'center',
   display: 'block',
-  marginTop: '1%'
+  marginTop: '0'
 }
 
 const weirdLogo = {
