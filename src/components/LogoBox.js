@@ -11,12 +11,12 @@ class LogoBox extends React.Component {
     return (
       <div className='prizes'>
         <Row>
-          <Col xs={3}>
+        <Col xs={3}>
             <Row>
-              <img src={TWENTYFIVE} className="prize-logo" alt="" />
-              <div className="deal-details">
-                <h3 className="deal-title">Pick the Score</h3>
-                <p className="deal-explanation">$25 off your check <br />($25 off $75) </p>
+            <img src={FIVEOFF} className="prize-logo" alt="" />
+            <div className="deal-details">
+                <h3 className="deal-title">Pick the First Scorer</h3>
+                <p className="deal-explanation">$5 off at Tom's </p>
               </div>
             </Row>
           </Col>
@@ -31,10 +31,10 @@ class LogoBox extends React.Component {
           </Col>
           <Col xs={3}>
             <Row>
-            <img src={FIVEOFF} className="prize-logo" alt="" />
-            <div className="deal-details">
-                <h3 className="deal-title">Pick the First Scorer</h3>
-                <p className="deal-explanation">$5 off at Tom's </p>
+              <img src={TWENTYFIVE} className="prize-logo" alt="" />
+              <div className="deal-details">
+                <h3 className="deal-title">Pick the Score</h3>
+                <p className="deal-explanation">$25 off your check <br />($25 off $75) </p>
               </div>
             </Row>
           </Col>
