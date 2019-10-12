@@ -91,7 +91,7 @@ class Score extends React.Component {
   startTimer(duration, display) {
     let currentComponent = this;
     var timer = duration, minutes, seconds;
-    var countDownDate = new Date("Oct 12, 2019 17:00:00").getTime();
+    var countDownDate = new Date("Oct 12, 2019 18:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
