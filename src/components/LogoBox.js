@@ -11,7 +11,7 @@ class LogoBox extends React.Component {
     return (
       <div className='prizes'>
         <Row>
-        <Col xs={3}>
+        <Col className="prize-column" xs={3}>
             <Row>
             <img src={FIVEOFF} className="prize-logo" alt="" />
             <div className="deal-details">
@@ -20,7 +20,7 @@ class LogoBox extends React.Component {
               </div>
             </Row>
           </Col>
-          <Col xs={3}>
+          <Col className="prize-column" xs={3}>
             <Row>
             <img src={TENOFF} className="prize-logo" alt="" />
             <div className="deal-details">
@@ -29,7 +29,7 @@ class LogoBox extends React.Component {
               </div>
             </Row>
           </Col>
-          <Col xs={3}>
+          <Col className="prize-column" xs={3}>
             <Row>
               <img src={TWENTYFIVE} className="prize-logo" alt="" />
               <div className="deal-details">
@@ -38,7 +38,7 @@ class LogoBox extends React.Component {
               </div>
             </Row>
           </Col>
-          <Col xs={3}>
+          <Col className="prize-column" xs={3}>
             <Row>
             <img src={FIFTYOFF} className="prize-logo" alt="" />
             <div className="deal-details">

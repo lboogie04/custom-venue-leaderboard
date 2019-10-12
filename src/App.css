@@ -172,6 +172,11 @@
 
 }
 
+.prize-column {
+  padding-right: 10px !important;
+  padding-left: 10px  !important;
+}
+
 .prize-logo {
   width: 45%;
   margin: 15px;
@@ -188,5 +193,5 @@
 }
 
 .deal-explanation {
-  font-size: 0.8rem;
+  font-size: 1.0rem;
 }
