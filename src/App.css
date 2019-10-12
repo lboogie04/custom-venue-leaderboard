@@ -142,7 +142,7 @@
 
 .user-info {
   text-align: left;
-  font-size: 26px;
+  font-size: 22px;
 }
 
 .avatar {
@@ -183,10 +183,10 @@
 
 .deal-title {
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-family: 'GothamBold';
 }
 
 .deal-explanation {
-  font-size: 1.1rem;
+  font-size: 1.0rem;
 }
