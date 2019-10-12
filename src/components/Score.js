@@ -155,18 +155,18 @@ class Score extends React.Component {
            <Row className='team-block'>
            <img src={nashville_logo} className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
-           <Row className='score-block'> <span>{this.state.match.AwayScore || 0}</span></Row>
+           <Row className='score-block'> <span>{this.state.match.AwayTeamScore || 0}</span></Row>
          </Col>
          
          {/* {gameStatus} */}
-         <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.Quarter)}<br/>Period</span></Col>
+         <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.Period)}<br/>Period</span></Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 
          <Col xs={5}>
            <Row className='team-block'>
              <img src={kings_logo} className="team-logo-vertical" alt="gameon-logo" />
            </Row>
-           <Row className='score-block'><span>{this.state.match.HomeScore || 0}</span></Row>
+           <Row className='score-block'><span>{this.state.match.HomeTeamScore || 0}</span></Row>
          </Col>
         </Row>
         <Row style={lasPlay}>
