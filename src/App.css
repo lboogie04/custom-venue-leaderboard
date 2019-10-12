@@ -114,7 +114,7 @@
   min-width: 100px;
   min-height: 100px;
   max-height: 700px;
-  height: 700px;
+  height: 600px;
   background: #191822;
   padding: 25px;
   margin-right: 25px;
@@ -183,10 +183,10 @@
 
 .deal-title {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-family: 'GothamBold';
 }
 
 .deal-explanation {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
