@@ -14,7 +14,8 @@ const logoStyle = {
 const lasPlay = {
   textAlign: 'center',
   display: 'block',
-  marginTop: '0'
+  marginTop: '0',
+  marginLeft: '10px'
 }
 
 const weirdLogo = {
@@ -38,14 +39,6 @@ class Score extends React.Component {
   componentDidMount() {
     this.fetchMatch();
     this.timer = setInterval(() => this.fetchMatch(), 15000);
-    // if (this.state.gameStarted == false) {
-    //   var fiveMinutes = 60 * 5;
-    //   var display = document.querySelector('#time');
-    //   this.startTimer(fiveMinutes, display);
-    // // var fiveMinutes = 60 * 5,
-    // // display = document.querySelector('#time');
-    // // this.startTimer(fiveMinutes, display);
-    // }
   }
 
   fetchMatch() {
