@@ -69,7 +69,7 @@ class Score extends React.Component {
     //   })
 
     //Fetching from SportsData
-    const url = 'https://api.sportsdata.io/v3/nhl/scores/json/GamesByDate/2019-10-12?key=8246e5284f1c47d2b6f54cfedb68292d';
+    const url = 'https://api.sportsdata.io/v3/nhl/scores/json/GamesByDate/2019-10-13?key=8246e5284f1c47d2b6f54cfedb68292d';
     let fetchData = { 
       method: 'GET', 
       // body: {match_id: 7283},
@@ -80,10 +80,10 @@ class Score extends React.Component {
     fetch(url, fetchData)
       .then((resp) => resp.json())
       .then(function(data) {
-        console.log(data[2])
+        console.log(data[1])
         currentComponent.setState({
-          match: data[2],
-          gameStarted: data[2].Status == 'Scheduled' ? false : true,
+          match: data[1],
+          gameStarted: data[1].Status == 'Scheduled' ? false : true,
           isLoading: false})
       })
   }
@@ -172,7 +172,7 @@ class Score extends React.Component {
         <Row style={lasPlay}>
           <h3 className="download-instruction">1. Download at Gameon.app/Toms</h3>
           <h3 className="download-instruction">2. Click "Play at the bar" & enter the bar code:</h3>
-          <h3 className="bar-code">TOMS</h3>
+          <h3 className="bar-code">LALV</h3>
         </Row>
 
 
