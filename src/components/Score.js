@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
+import Countdown from './Countdown';
 import Gameon_White from '../images/Gameon_White.png';
 import Toms_Watch_Bar from '../images/Toms_Watch_Bar.png';
 import lv from '../images/team-logos/lv.png';
@@ -17,7 +18,7 @@ const lasPlay = {
 }
 
 const weirdLogo = {
-  width: '190px'
+  width: '180px'
 }
 
 class Score extends React.Component {
@@ -159,7 +160,10 @@ class Score extends React.Component {
          </Col>
          
          {/* {gameStatus} */}
-         <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.match.Period)}<br/>Period</span></Col>
+         <Col className='time-period-block' xs={2}><span id="time">
+           <Countdown suffix="til puck drops"/>
+           {this.properSuffix(this.state.match.Period)}<br/>Period</span>
+          </Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 
          <Col xs={5}>

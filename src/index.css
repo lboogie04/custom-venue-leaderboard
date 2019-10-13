@@ -7,6 +7,12 @@
   font-family: 'GothamBold';
   src: local('GothamBold'), url(./fonts/Gotham-Bold.otf) format('truetype');
 }
+
+@font-face {
+  font-family: 'GothamCondensed';
+  src: local('GothamCondensed'), url(./fonts/GothamCondensed-Black.otf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

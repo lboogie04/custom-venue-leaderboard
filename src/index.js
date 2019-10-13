@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './fonts/LemonMilkbold.otf';
 import './fonts/Gotham-Bold.otf';
+import './fonts/GothamCondensed-Black.otf';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
