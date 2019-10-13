@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import Gameon_White from '../images/Gameon_White.png';
 import Toms_Watch_Bar from '../images/Toms_Watch_Bar.png';
-import nashville_logo from '../images/team-logos/nashville_logo.png';
+import lv from '../images/team-logos/lv.png';
 import kings_logo from '../images/team-logos/kings_logo.png';
 
 
@@ -17,7 +17,7 @@ const lasPlay = {
 }
 
 const weirdLogo = {
-  paddingTop: '15%'
+  width: '190px'
 }
 
 class Score extends React.Component {
@@ -153,7 +153,7 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           <img src={nashville_logo} className="team-logo" alt="gameon-logo" style={weirdLogo} />
+           <img src={lv} className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
            <Row className='score-block'> <span>{this.state.match.AwayTeamScore || 0}</span></Row>
          </Col>
