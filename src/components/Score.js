@@ -21,7 +21,8 @@ const lasPlay = {
 }
 
 const weirdLogo = {
-  width: '180px'
+  width: '180px',
+  paddingTop: '45px'
 }
 
 class Score extends React.Component {
