@@ -21,7 +21,7 @@ const lasPlay = {
 }
 
 const weirdLogo = {
-  width: '180px',
+  width: '200px',
   paddingTop: '45px'
 }
 
@@ -134,7 +134,7 @@ class Score extends React.Component {
   }
 
   render() {
-    let gameStatus = this.state.match.status == "Pending" || this.state.gameStarted == true ? 
+    let gameStatus = this.state.match.status == "Pending" || this.state.gameStarted === true ? 
                       <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> :
                       <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.Period)}<br/>Quarter</span></Col>
     return (
