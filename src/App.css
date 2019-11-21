@@ -97,6 +97,7 @@
 .time {
   font-family: 'GothamCondensed';
   font-size: 3rem;
+  margin-left: 20px;
 }
 .suffix {
   font-family: 'GothamBold';
@@ -199,7 +200,7 @@
 
 .deal-title {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-family: 'GothamBold';
 }
 
