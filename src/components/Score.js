@@ -30,7 +30,7 @@ class Score extends React.Component {
     this.state = {
         isLoading: false,
         match: {},
-        gameStarted: true
+        gameStarted: false
 
     };
 
@@ -133,9 +133,9 @@ class Score extends React.Component {
   }
 
   render() {
-    let gameStatus = this.state.match.status == "Pending" ? 
+    let gameStatus = this.state.match.status == "Pending" || this.state.gameStarted == true ? 
                       <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> :
-                      <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.Quarter)}<br/>Quarter</span></Col>
+                      <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.Period)}<br/>Quarter</span></Col>
     return (
       <div className='score-section'>
         <Row className='logos'>
@@ -156,8 +156,8 @@ class Score extends React.Component {
          
          {/* {gameStatus} */}
          <Col className='time-period-block' xs={2}><span id="time">
-           <Countdown suffix="til puck drops"/>
-           {this.properSuffix(this.state.match.Period)}<br/>Period</span>
+           {!this.state.gameStarted && <Countdown suffix="til puck drops"/>}
+          {this.properSuffix(this.state.match.Period)}<br/>{this.state.gameStarted ? 'Period' : ''}</span>
           </Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 

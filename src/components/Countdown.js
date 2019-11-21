@@ -31,11 +31,11 @@ class CountDown extends Component {
             }
     }
     componentDidMount() {
-        this.deadline = new Date("Oct 13, 2019 21:00:00").getTime();
- 
+        this.deadline = new Date("Nov 21, 2019 21:00:00").getTime();
+
         this.x = setInterval(this.count, 1000);
     }
-    
+
     render() {
         const { days, seconds, hours, minutes, time_up, display } = this.state
         const {suffix} = this.props
@@ -49,4 +49,4 @@ class CountDown extends Component {
     }
 }
 
-export default CountDown
+export default CountDown 
