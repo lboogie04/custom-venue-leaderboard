@@ -97,7 +97,7 @@
 .time {
   font-family: 'GothamCondensed';
   font-size: 3rem;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 .suffix {
   font-family: 'GothamBold';
