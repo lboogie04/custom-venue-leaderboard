@@ -29,7 +29,7 @@ class Leaderboard extends React.Component {
   }
 
   componentDidMount() {
-    // this.fetchContestants();
+    this.fetchContestants();
     // this.timer = setInterval(() => this.fetchContestants(), 15000);
   }
 
@@ -60,7 +60,7 @@ class Leaderboard extends React.Component {
       <div className='leaderboard-section'>
         <div className='leaderboard'>
         <p>Leaderboard</p>
-        {contestants.map((contestant, i) => {
+        {contestants.length > 0 && contestants.map((contestant, i) => {
           return (<LeaderboardContestant
             key={i}
             name={contestant.user.username}
