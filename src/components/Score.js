@@ -80,7 +80,7 @@ class Score extends React.Component {
         console.log(data[8])
         currentComponent.setState({
           match: data[8],
-          gameStarted: data[8].Status == 'Scheduled' ? false : true,
+          gameStarted: data[8].Status === 'Scheduled' ? false : true,
           isLoading: false})
       })
   }
@@ -117,24 +117,19 @@ class Score extends React.Component {
     switch(int) {
       case("1"):
         return "1st"
-        break;
        case("2"):
         return "2nd"
-        break;
        case("3"):
         return "3rd"
-        break;
       case("4"):
         return "4th"
-        break;
       case("HALF"):
         return "Halftime"
-        break;
     }
   }
 
   render() {
-    let gameStatus = this.state.match.status == "Pending" || this.state.gameStarted === true ? 
+    let gameStatus = this.state.match.status === "Pending" || this.state.gameStarted === true ? 
                       <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> :
                       <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.Period)}<br/>Quarter</span></Col>
     return (
@@ -172,7 +167,7 @@ class Score extends React.Component {
         <Row style={lasPlay}>
           <h3 className="download-instruction">1. Download at Gameon.app/Toms</h3>
           <h3 className="download-instruction">2. Click "Play at the bar" & enter the bar code:</h3>
-          <h3 className="bar-code">TOMSBAR</h3>
+          <h3 className="bar-code">TOMSBOWL</h3>
         </Row>
 
 

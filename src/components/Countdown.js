@@ -39,7 +39,7 @@ class CountDown extends Component {
     render() {
         const { days, seconds, hours, minutes, time_up, display } = this.state
         const {suffix} = this.props
-        if (display == false) return null
+        if (display === false) return null
         return ( 
             <div> 
               <p className="time">{hours}:{minutes}:{seconds}</p>

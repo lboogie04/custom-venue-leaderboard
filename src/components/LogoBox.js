@@ -10,7 +10,7 @@ class LogoBox extends React.Component {
   render() {
     return (
       <div className='prizes'>
-        <Row>
+        {/* <Row>
         <Col className="prize-column" xs={3}>
             <Row>
             <img src={FIVEOFF} className="prize-logo" alt="" />
@@ -47,7 +47,7 @@ class LogoBox extends React.Component {
               </div>
             </Row>
           </Col>
-        </Row>
+        </Row> */}
       </div>
       
     )
