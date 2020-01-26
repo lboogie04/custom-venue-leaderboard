@@ -145,7 +145,7 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           <img src={sharks} className="team-logo" alt="gameon-logo" style={weirdLogo} />
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Kansas_City_Chiefs_logo.svg/2560px-Kansas_City_Chiefs_logo.svg.png" className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
            <Row className='score-block'> <span>{this.state.match.AwayTeamScore || 0}</span></Row>
          </Col>
@@ -159,7 +159,7 @@ class Score extends React.Component {
 
          <Col xs={5}>
            <Row className='team-block'>
-             <img src={kings_logo} className="team-logo-vertical" alt="gameon-logo" />
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/2560px-San_Francisco_49ers_logo.svg.png" className="team-logo-vertical" alt="gameon-logo" />
            </Row>
            <Row className='score-block'><span>{this.state.match.HomeTeamScore || 0}</span></Row>
          </Col>
