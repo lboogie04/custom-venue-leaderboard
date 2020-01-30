@@ -66,7 +66,7 @@ class Score extends React.Component {
     //   })
 
     //Fetching from SportsData
-    const url = 'https://api.sportsdata.io/v3/nhl/scores/json/GamesByDate/2019-11-25?key=8246e5284f1c47d2b6f54cfedb68292d';
+    const url = 'https://api.sportsdata.io/v3/nfl/scores/json/ScoresByWeek/2019POST/4?key=10a1c8e6450b4be7a01a81026bbc78f0';
     let fetchData = { 
       method: 'GET', 
       // body: {match_id: 7283},
@@ -77,10 +77,10 @@ class Score extends React.Component {
     fetch(url, fetchData)
       .then((resp) => resp.json())
       .then(function(data) {
-        console.log(data[8])
+        console.log(data[0])
         currentComponent.setState({
-          match: data[8],
-          gameStarted: data[8].Status === 'Scheduled' ? false : true,
+          match: data[0],
+          gameStarted: data[0].Status === 'Scheduled' ? false : true,
           isLoading: false})
       })
   }
@@ -88,7 +88,7 @@ class Score extends React.Component {
   startTimer(duration, display) {
     let currentComponent = this;
     var timer = duration, minutes, seconds;
-    var countDownDate = new Date("Oct 12, 2019 18:00:00").getTime();
+    var countDownDate = new Date("Feb 02, 2020 18:00:00").getTime();
     var x = setInterval(function () {
         var now = new Date().getTime();
         var distance = countDownDate - now;
@@ -145,7 +145,7 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Kansas_City_Chiefs_logo.svg/2560px-Kansas_City_Chiefs_logo.svg.png" className="team-logo" alt="gameon-logo" style={weirdLogo} />
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/2560px-San_Francisco_49ers_logo.svg.png" className="team-logo-vertical" alt="gameon-logo" />
            </Row>
            <Row className='score-block'> <span>{this.state.match.AwayTeamScore || 0}</span></Row>
          </Col>
@@ -153,13 +153,13 @@ class Score extends React.Component {
          {/* {gameStatus} */}
          <Col className='time-period-block' xs={2}><span id="time">
            {!this.state.gameStarted && <Countdown suffix="til puck drops"/>}
-          {this.properSuffix(this.state.match.Period)}<br/>{this.state.gameStarted ? 'Period' : ''}</span>
+          {this.properSuffix(this.state.match.Quarter)}<br/>{this.state.gameStarted ? 'Quarter' : ''}</span>
           </Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 
          <Col xs={5}>
            <Row className='team-block'>
-             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/2560px-San_Francisco_49ers_logo.svg.png" className="team-logo-vertical" alt="gameon-logo" />
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Kansas_City_Chiefs_logo.svg/2560px-Kansas_City_Chiefs_logo.svg.png" className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
            <Row className='score-block'><span>{this.state.match.HomeTeamScore || 0}</span></Row>
          </Col>

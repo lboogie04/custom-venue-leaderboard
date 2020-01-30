@@ -10,6 +10,7 @@ class LogoBox extends React.Component {
   render() {
     return (
       <div className='prizes'>
+        <h1 className='prize-giveaway'>$100,000 Perfect Picks Giveaway</h1>
         {/* <Row>
         <Col className="prize-column" xs={3}>
             <Row>

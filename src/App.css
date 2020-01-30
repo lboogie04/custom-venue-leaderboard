@@ -181,7 +181,12 @@
   background: #191822;
   min-height: 100px;
   width: 100%;
+  text-align: center;
 
+}
+
+.prize-giveaway {
+  font-size: 4.5rem;
 }
 
 .prize-column {
