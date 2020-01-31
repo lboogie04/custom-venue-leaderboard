@@ -9,8 +9,8 @@ import TWENTYFIVE from '../images/TWENTYFIVE.jpg';
 class LogoBox extends React.Component {
   render() {
     return (
-      <div className='prizes'>
-        <h1 className='prize-giveaway'>$100,000 Perfect Picks Giveaway</h1>
+      <>
+      {/* <div className='prizes'> */}
         {/* <Row>
         <Col className="prize-column" xs={3}>
             <Row>
@@ -49,7 +49,8 @@ class LogoBox extends React.Component {
             </Row>
           </Col>
         </Row> */}
-      </div>
+      {/* </div> */}
+      </>
       
     )
   }

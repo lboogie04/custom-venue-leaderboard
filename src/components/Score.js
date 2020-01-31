@@ -168,6 +168,7 @@ class Score extends React.Component {
           <h3 className="download-instruction">1. Download at Gameon.app/Toms</h3>
           <h3 className="download-instruction">2. Click "Play at the bar" & enter the bar code:</h3>
           <h3 className="bar-code">TOMSBOWL</h3>
+          <h1 className='bar-code'>$100,000 Perfect Picks Giveaway</h1>
         </Row>
 
 
