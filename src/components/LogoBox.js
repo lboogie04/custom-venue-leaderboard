@@ -1,10 +1,10 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
-import kings_prize from '../images/kings_prize.png';
-import FIVEOFF from '../images/FIVEOFF.jpg';
-import FIFTYOFF from  '../images/FIFTYOFF.jpg';
-import TENOFF from '../images/TENOFF.jpg';
-import TWENTYFIVE from '../images/TWENTYFIVE.jpg';
+// import { Row, Col } from 'react-bootstrap';
+// import kings_prize from '../images/kings_prize.png';
+// import FIVEOFF from '../images/FIVEOFF.jpg';
+// import FIFTYOFF from  '../images/FIFTYOFF.jpg';
+// import TENOFF from '../images/TENOFF.jpg';
+// import TWENTYFIVE from '../images/TWENTYFIVE.jpg';
 
 class LogoBox extends React.Component {
   render() {

@@ -5,8 +5,6 @@ import styled from 'styled-components';
 
 import Gameon_White from '../images/Gameon_White.png';
 import Toms_Watch_Bar from '../images/Toms_Watch_Bar.png';
-import sharks from '../images/team-logos/sharks.png';
-import kings_logo from '../images/team-logos/kings_logo.png';
 
 
 const logoStyle = {
