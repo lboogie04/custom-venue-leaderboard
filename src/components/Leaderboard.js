@@ -29,7 +29,7 @@ class Leaderboard extends React.Component {
   }
 
   componentDidMount() {
-    //this.fetchContestants();
+    this.fetchContestants();
     //this.timer = setInterval(() => this.fetchContestants(), 30000);
   }
 
