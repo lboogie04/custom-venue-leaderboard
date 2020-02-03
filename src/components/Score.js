@@ -39,7 +39,7 @@ class Score extends React.Component {
 
   componentDidMount() {
     this.fetchMatch();
-    this.timer = setInterval(() => this.fetchMatch(), 19000);
+    // this.timer = setInterval(() => this.fetchMatch(), 19000);
   }
 
   fetchMatch() {
