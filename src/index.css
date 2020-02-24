@@ -13,6 +13,26 @@
   src: local('GothamCondensed'), url(./fonts/GothamCondensed-Black.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'SFUIDisplay-Heavy';
+  src: local('SFUIDisplay-Heavy'), url(./fonts/SF-UI-Display-Heavy.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Barlow-Regular';
+  src: local('Barlow-Regular'), url(./fonts/Barlow-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'BarlowCondensed-Regular';
+  src: local('BarlowCondensed-Regular'), url(./fonts/BarlowCondensed-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'TrumpGothicPro';
+  src: local('TrumpGothicPro'), url(./fonts/TrumpGothicPro.otf) format('truetype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

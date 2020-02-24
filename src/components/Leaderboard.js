@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Spinner } from 'react-bootstrap';
 import gameon_avatar from '../images/gameon_avatar.png';
 
 
@@ -7,12 +7,12 @@ export function LeaderboardContestant(props) {
   let avatar = props.avatar === "" ? gameon_avatar : props.avatar
   return (
     <Row className='contestant' >
-      <Col className='position'>{props.position}</Col>
-      <Col xs={6} className='user-info'>
+      <Col xs={1} className='position'>{props.position}</Col>
+      <Col xs={7} className='user-info'>
       <img src={avatar} className="avatar" alt="user-avatar" />
         {props.name}
       </Col>
-      <Col className='points'>{props.points}</Col>
+      <Col xs={4} className='points'>{props.points} pts</Col>
     </Row>
     )
 }
@@ -55,11 +55,14 @@ class Leaderboard extends React.Component {
   }
 
   render() {
-    const { contestants } = this.state;
+    const { contestants, isLoading } = this.state;
+
+    if (isLoading == true) return <Spinner animation="grow" variant="light" />
     return (
       <div className='leaderboard-section'>
         <div className='leaderboard'>
-        <p>Leaderboard</p>
+        <p className='leaderboard-header'>Leaderboard</p>
+        <p className='leaderboard-subheader'>Top predictions at this bar</p>
         {contestants.length > 0 && contestants.map((contestant, i) => {
           return (<LeaderboardContestant
             key={i}
