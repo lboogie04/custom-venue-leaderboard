@@ -217,6 +217,7 @@
 .app-info {
   margin-top: 45px;
   color: white;
+  width: 90%;
 }
 
 .wanna-play-section {
@@ -231,10 +232,10 @@
 
 .wanna-play-section img {
   display: inline-block;
-  /* float: right; */
+  float: right;
   width: 45px;
-  margin-top: -15px;
   margin-left: 25px;
+  margin-top: 3px;
 }
 
 .instructions {
@@ -264,7 +265,7 @@ li {
 }
 
 .app-icons img {
-  width: 100px;
+  width: 145px;
 }
 
 
