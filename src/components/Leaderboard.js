@@ -8,7 +8,7 @@ export function LeaderboardContestant(props) {
   return (
     <Row className='contestant' >
       <Col xs={1} className='position'>{props.position}</Col>
-      <Col xs={7} className='user-info'>
+      <Col xs={6} className='user-info'>
       <img src={avatar} className="avatar" alt="user-avatar" />
         {props.name}
       </Col>
@@ -57,7 +57,11 @@ class Leaderboard extends React.Component {
   render() {
     const { contestants, isLoading } = this.state;
 
-    if (isLoading == true) return <Spinner animation="grow" variant="light" />
+    if (isLoading == true) return (
+      <div className="loading-div">
+        <Spinner animation="grow" variant="light" />
+      </div>
+    )
     return (
       <div className='leaderboard-section'>
         <div className='leaderboard'>
