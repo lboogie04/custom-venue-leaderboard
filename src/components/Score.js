@@ -3,8 +3,6 @@ import { Row, Col } from 'react-bootstrap';
 import Countdown from './Countdown';
 import styled from 'styled-components';
 
-import Gameon_White from '../images/Gameon_White.png';
-import Toms_Watch_Bar from '../images/Toms_Watch_Bar.png';
 
 
 const logoStyle = {
@@ -132,14 +130,6 @@ class Score extends React.Component {
                       <Col className='time-period-block' xs={2}><span id="time">{this.properSuffix(this.state.Period)}<br/>Quarter</span></Col>
     return (
       <div className='score-section'>
-        <Row className='logos'>
-          <span>
-            <img src={Gameon_White} className="gameon-logo" alt="gameon-logo" />
-            @
-            <img src={Toms_Watch_Bar} className="toms-logo" alt="toms-logo" />
-          </span>
-        </Row>
-
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
@@ -161,12 +151,6 @@ class Score extends React.Component {
            </Row>
            <Row className='score-block'><span>{this.state.match.HomeScore || 0}</span></Row>
          </Col>
-        </Row>
-        <Row style={lasPlay}>
-          <h3 className="download-instruction">1. Download at Gameon.app/Toms</h3>
-          <h3 className="download-instruction">2. Click "Play at the bar" & enter the bar code:</h3>
-          <h3 className="bar-code">TOMSBOWL</h3>
-          <h1 className='bar-code'>$100,000 Perfect Picks Giveaway</h1>
         </Row>
 
 

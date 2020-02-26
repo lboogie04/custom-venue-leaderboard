@@ -54,6 +54,9 @@
 .score-section {
   display: inline-block;
   width: 100%;
+  border-radius: 2px;
+  border: solid 1px rgba(255, 255, 255, 0.15);
+  min-height: 40rem;
 }
 
 .logos {
