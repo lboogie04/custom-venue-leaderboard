@@ -84,6 +84,7 @@
   display: block;
   text-align: center;
   min-height: 250px;
+  margin-top: 120px;
   /* position: relative;
   top: 50%;
   transform: perspective(1px) translateY(-50%); */
