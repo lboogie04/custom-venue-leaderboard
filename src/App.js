@@ -12,19 +12,6 @@ function App() {
   return (
     <div className="App">
       <BarContainer />
-      {/* <header className="App-header">
-        <Row className='top-section'>
-          <Col xs={8}>
-            <Score />
-          </Col>
-          <Col>
-            <Leaderboard />
-          </Col>
-        </Row>
-        <Row className='prize-section'>
-          <LogoBox />
-        </Row>
-      </header> */}
     </div>
   );
 }
