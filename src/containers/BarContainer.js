@@ -16,7 +16,6 @@ class BarContainer extends React.Component {
           <Col xs={9}>
             <ScoreContainer platform={window.location.href.includes('x1') ? 'x1' : 'venue'}/>
             <PrizeContainer />
-            <h1>hello</h1>
           </Col>
         </Row>
       </div>
