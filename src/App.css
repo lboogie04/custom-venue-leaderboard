@@ -215,6 +215,15 @@
   text-align: right;
 }
 
+.x1-container {
+  background-color: #161616;
+  background-repeat: no-repeat;
+  background-size:100% 60%;
+  background-position: center;
+  padding: 0px;
+  height: 80vh;
+}
+
 
 
 
@@ -272,6 +281,14 @@ li {
   width: 145px;
 }
 
+
+.prize-container {
+  border-radius: 2px;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  width: 100%;
+  min-height: 123px;
+  margin-top: 16px;
+}
 
 
 .prize-section {
