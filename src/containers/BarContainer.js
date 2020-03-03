@@ -14,7 +14,7 @@ class BarContainer extends React.Component {
             <LeaderboardContainer />
           </Col>
           <Col xs={9}>
-            <ScoreContainer platform={window.location.href.includes('x1') ? 'x1' : 'venue'}/>
+            <ScoreContainer platform={window.location.href.includes('xfinity') ? 'xfinity' : 'venue'}/>
             <PrizeContainer />
           </Col>
         </Row>

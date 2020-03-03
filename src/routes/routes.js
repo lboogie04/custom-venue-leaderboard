@@ -9,7 +9,7 @@ export const Routes = () => {
       <Route exact path="/">
         <Redirect to="/venue" />
       </Route>
-      <Route exact path="/x1" component={App} />
+      <Route exact path="/xfinity" component={App} />
     </div>
   )
 }
