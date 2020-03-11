@@ -8,12 +8,12 @@ import $ from 'jquery';
 class BarContainer extends React.Component {
 
   componentDidMount() {
-    if ($badger && $badger.active()) {
-      console.log("Badger is active!");
-    } else {
-      console.log($badger);
-      console.log("What the hell is badger");
-    }
+    // if ($badger && $badger.active()) {
+    //   console.log("Badger is active!");
+    // } else {
+    //   console.log($badger);
+    //   console.log("What the hell is badger");
+    // }
   }
 
   render () {
