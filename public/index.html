@@ -45,9 +45,11 @@
        console.log("Badger is active!");
        $badger.launchCompletedMetricsHandler();
      } else {
-       console.log($badger);
        console.log("What the hell is badger");
-       $badger.launchCompletedMetricsHandler();
+       document.addEventListener('onMoneyBadgerReady', () => {
+        console.log("onMoneyBadgerReady");
+       });
+      //  $badger.launchCompletedMetricsHandler();
      }
      </script>
   </body>
