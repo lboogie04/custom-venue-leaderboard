@@ -29,6 +29,11 @@
 }
 
 @font-face {
+  font-family: 'BarlowCondensed-MediumItalic';
+  src: local('BarlowCondensed-MediumItalic'), url(./fonts/BarlowCondensed-MediumItalic.ttf) format('truetype');
+}
+
+@font-face {
   font-family: 'TrumpGothicPro';
   src: local('TrumpGothicPro'), url(./fonts/TrumpGothicPro.otf) format('truetype');
 }

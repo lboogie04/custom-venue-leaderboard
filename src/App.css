@@ -97,6 +97,7 @@
   margin-top: 30px;
  font-size: 120px;
  font-weight: bold;
+ color: white;
 }
 
 .time-period-block {
@@ -334,4 +335,17 @@ li {
 
 .deal-explanation {
   font-size: 1.0rem;
+}
+
+.tagline {
+  font-family: 'BarlowCondensed-MediumItalic';
+  font-size: 28px;
+  color: white;
+  line-height: 30.8px;
+  padding: 50px 30px;
+  margin-bottom: 0;
+}
+
+.winning {
+  color: #ebff00;
 }

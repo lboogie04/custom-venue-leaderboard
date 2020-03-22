@@ -5,6 +5,7 @@ import ScoreContainer from '../containers/ScoreContainer';
 import PrizeContainer from '../containers/PrizeContainer';
 import $ from 'jquery';
 
+
 class BarContainer extends React.Component {
 
   componentDidMount() {
