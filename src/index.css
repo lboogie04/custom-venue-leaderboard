@@ -19,6 +19,11 @@
 }
 
 @font-face {
+  font-family: 'SFUIDisplay-Bold';
+  src: local('SFUIDisplay-Bold'), url(./fonts/SF-UI-Display-Bold.otf) format('truetype');
+}
+
+@font-face {
   font-family: 'Barlow-Regular';
   src: local('Barlow-Regular'), url(./fonts/Barlow-Regular.ttf) format('truetype');
 }

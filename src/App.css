@@ -349,3 +349,36 @@ li {
 .winning {
   color: #ebff00;
 }
+
+.firstPlace {
+  font-family: 'SFUIDisplay-Bold';
+  background-image: linear-gradient(to top, #927731, #cec6b2, #927731, #cec6b2, #927731);
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 28px;
+  -webkit-text-fill-color: transparent;
+  }
+
+  .secondPlace {
+    font-family: 'SFUIDisplay-Bold';
+    background-image: linear-gradient(to top, #927731, #969696, #e7e7e7, #969696, #e7e7e7, #969696);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 28px;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .thirdPlace {
+    font-family: 'SFUIDisplay-Bold';
+    background-image: linear-gradient(to top, #d58766, #ebc5b5, #d58766, #ebc5b5, #d58766, #ebc5b5, #d58766, #d58766);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 28px;
+    -webkit-text-fill-color: transparent;
+  }

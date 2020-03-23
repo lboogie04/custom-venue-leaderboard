@@ -19,8 +19,9 @@ const FirstWrapper = styled.div`
   background-size: 100%;
   background: url(${firstPrize});
   min-height: 150px;
-  width: 100%;
-  background-size: 90%;
+  width: 80%;
+  text-align: center;
+  background-size: 95%;
   background-repeat: no-repeat;
 `;
 
@@ -29,8 +30,9 @@ const SecondWrapper = styled.div`
   background-size: 100%;
   background: url(${secondPrize});
   min-height: 150px;
-  width: 100%;
-  background-size: 90%;
+  width: 80%;
+  text-align: center;
+  background-size: 95%;
   background-repeat: no-repeat;
 `;
 
@@ -39,8 +41,9 @@ const ThirdWrapper = styled.div`
   background-size: 100%;
   background: url(${thirdPrize});
   min-height: 150px;
-  width: 100%;
-  background-size: 90%;
+  width: 80%;
+  text-align: center;
+  background-size: 95%;
   background-repeat: no-repeat;
 `;
 
@@ -55,9 +58,16 @@ class PrizeContainer extends React.Component {
         </Col>
         <Col xs={9}>
         <Wrapper>
-          <FirstWrapper />
-          <SecondWrapper />
-          <ThirdWrapper />
+          <FirstWrapper>
+            <p className="firstPlace">1st Place</p>
+            {/* <p>50% off your check</p> */}
+          </FirstWrapper>
+          <SecondWrapper>
+            <p className="secondPlace">2nd Place</p>
+          </SecondWrapper>
+          <ThirdWrapper>
+          <p className="thirdPlace">3rd Place</p>
+          </ThirdWrapper>
           </Wrapper>
         </Col>
         </Row>
