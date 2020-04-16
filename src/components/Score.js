@@ -37,48 +37,48 @@ class Score extends React.Component {
 
   componentDidMount() {
     this.fetchMatch();
-    // this.timer = setInterval(() => this.fetchMatch(), 19000);
+    this.timer = setInterval(() => this.fetchMatch(), 19000);
   }
 
   fetchMatch() {
 
     //Fetching from GAMEON
-    // const url = 'https://gameon.app/api/v1/get_match';
-    // let fetchData = { 
-    //   method: 'POST', 
-    //   body: {match_id: 8332},
-    //   headers: new Headers()
-    // }
-
-    let currentComponent = this;
-    // this.setState({isLoading: true});
-    // fetch(url, fetchData)
-    //   .then((resp) => resp.json())
-    //   .then(function(data) {
-    //     console.log(data)
-    //     currentComponent.setState({
-    //       match: data,
-    //       isLoading: false})
-    //   })
-
-    //Fetching from SportsData
-    const url = 'https://api.sportsdata.io/v3/nfl/scores/json/ScoresByWeek/2019POST/4?key=10a1c8e6450b4be7a01a81026bbc78f0';
+    const url = 'https://gameon.app/api/v1/get_match';
     let fetchData = { 
-      method: 'GET', 
-      // body: {match_id: 7283},
+      method: 'POST', 
+      body: {match_id: 8332},
       headers: new Headers()
     }
 
+    let currentComponent = this;
     this.setState({isLoading: true});
     fetch(url, fetchData)
       .then((resp) => resp.json())
       .then(function(data) {
-        console.log(data[0])
+        console.log(data)
         currentComponent.setState({
-          match: data[0],
-          gameStarted: data[0].Status === 'Scheduled' ? false : true,
+          match: data,
           isLoading: false})
       })
+
+    //Fetching from SportsData
+    // const url = 'https://api.sportsdata.io/v3/nfl/scores/json/ScoresByWeek/2019POST/4?key=10a1c8e6450b4be7a01a81026bbc78f0';
+    // let fetchData = { 
+    //   method: 'GET', 
+    //   // body: {match_id: 7283},
+    //   headers: new Headers()
+    // }
+
+    // this.setState({isLoading: true});
+    // fetch(url, fetchData)
+    //   .then((resp) => resp.json())
+    //   .then(function(data) {
+    //     console.log(data[0])
+    //     currentComponent.setState({
+    //       match: data[0],
+    //       gameStarted: data[0].Status === 'Scheduled' ? false : true,
+    //       isLoading: false})
+    //   })
   }
 
   startTimer(duration, display) {
@@ -113,11 +113,19 @@ class Score extends React.Component {
     switch(int) {
       case("1"):
         return "1st"
+      case(1):
+        return "1st"
        case("2"):
+        return "2nd"
+      case(2):
         return "2nd"
        case("3"):
         return "3rd"
+       case(3):
+        return "3rd"
       case("4"):
+        return "4th"
+      case(4):
         return "4th"
       case("HALF"):
         return "Halftime"
@@ -133,23 +141,23 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/2560px-San_Francisco_49ers_logo.svg.png" className="team-logo-vertical" alt="gameon-logo" />
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Houston_Rockets.svg/150px-Houston_Rockets.svg.png" className="team-logo-vertical" alt="gameon-logo" />
            </Row>
-           <Row className='score-block'> <span>{this.state.match.AwayScore || 0}</span></Row>
+           <Row className='score-block'> <span>{this.state.match.AwayScore || this.state.match.visitor_team_points || 0}</span></Row>
          </Col>
          
          {/* {gameStatus} */}
          <Col className='time-period-block' xs={2}><span id="time">
-           {!this.state.gameStarted && <Countdown suffix="til puck drops"/>}
-          {this.properSuffix(this.state.match.Quarter)}<br/>{this.state.gameStarted ? 'Quarter' : ''}</span>
+           {!this.state.gameStarted && <Countdown suffix="til game starts"/>}
+          {this.properSuffix(this.state.match.current_increment)}<br/>{this.state.gameStarted || this.state.match.status === "Finished" ? 'Quarter' : ''}</span>
           </Col>
          {/* <Col className='time-period-block' xs={2}><span id="time">00:00:00<br/>to start</span></Col> */}
 
          <Col xs={5}>
            <Row className='team-block'>
-           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e1/Kansas_City_Chiefs_logo.svg/2560px-Kansas_City_Chiefs_logo.svg.png" className="team-logo" alt="gameon-logo" style={weirdLogo} />
+           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/200px-New_York_Knicks_logo.svg.png" className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
-           <Row className='score-block'><span>{this.state.match.HomeScore || 0}</span></Row>
+           <Row className='score-block'><span>{this.state.match.HomeScore || this.state.match.home_team_points || 0}</span></Row>
          </Col>
         </Row>
 
