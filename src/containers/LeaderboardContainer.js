@@ -11,10 +11,10 @@ class LeaderboardContainer extends React.Component {
       <div className='leaderboard-container'>
         <BarTitle
           logo={gameon_logo}
-          bar_name='Toms Watch Bar'
+          bar_name='Demo Bar'
           />
           <Leaderboard />
-          <AppInfo bar_code='Sample' />
+          <AppInfo bar_code='DEMO2020' />
       </div>
     )
   }
