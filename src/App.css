@@ -382,3 +382,30 @@ li {
     margin-top: 28px;
     -webkit-text-fill-color: transparent;
   }
+
+  iframe {
+    width: 100%;
+    height: 100%;;
+  }
+
+  .x1-score-container {
+    padding: 10px 30px;
+  }
+
+  .x1-team-logo {
+    margin-top: 10px;
+  }
+
+  .prize-container-logo {
+    width: 125px;
+  }
+  .prize-container-logo-width {
+    width: 170px;
+    margin-top: 10px;
+  }
+
+  .prize-score-box {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+  }

@@ -18,6 +18,7 @@ class BarContainer extends React.Component {
   }
 
   render () {
+    const platform = window.location.href.includes('venue') ? 'venue' : 'xfinity';
     return (
       <div className='bar-container'>
         <Row>
@@ -25,8 +26,8 @@ class BarContainer extends React.Component {
             <LeaderboardContainer />
           </Col>
           <Col xs={9}>
-            <ScoreContainer platform={window.location.href.includes('xfinity') ? 'xfinity' : 'venue'}/>
-            <PrizeContainer />
+            <ScoreContainer platform={window.location.href.includes('venue') ? 'venue' : 'xfinity'}/>
+            <PrizeContainer platform={platform}/>
           </Col>
         </Row>
       </div>
