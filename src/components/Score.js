@@ -46,7 +46,7 @@ class Score extends React.Component {
     const url = 'https://gameon.app/api/v1/get_match';
     let fetchData = { 
       method: 'POST', 
-      body: {match_id: 10348},
+      body: {match_id: 10349},
       headers: new Headers()
     }
 

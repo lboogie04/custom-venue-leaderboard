@@ -69,7 +69,7 @@ class PrizeContainer extends React.Component {
     const url = 'https://gameon.app/api/v1/get_match';
     let fetchData = { 
       method: 'POST', 
-      body: {match_id: 10348},
+      body: {match_id: 10349},
       headers: new Headers()
     }
 
@@ -111,13 +111,13 @@ class PrizeContainer extends React.Component {
         <div className='x1-score-container'>
           <Row>
         <Col xs={3} className="x1-team-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/it/f/f1/Oakland_Raiders_logo.png" className="prize-container-logo" alt="gameon-logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/460px-San_Francisco_49ers_logo.svg.png" className="prize-container-logo" alt="gameon-logo" />
         </Col>
         <Col xs={3} >
         <Row className='prize-score-box'> <span>{this.state.match.AwayScore || this.state.match.visitor_team_points || 0}</span></Row>
         </Col>
         <Col xs={3} className="x1-team-logo">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/460px-San_Francisco_49ers_logo.svg.png" className="prize-container-logo-width" alt="gameon-logo" />
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Seattle_Seahawks_logo.svg/2880px-Seattle_Seahawks_logo.svg.png" className="prize-container-logo-width" alt="gameon-logo" />
         </Col>
         <Col xs={3}>
         <Row className='prize-score-box'><span>{this.state.match.HomeScore || this.state.match.home_team_points || 0}</span></Row>

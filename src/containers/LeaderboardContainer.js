@@ -14,7 +14,7 @@ class LeaderboardContainer extends React.Component {
           bar_name='Demo Bar'
           />
           <Leaderboard />
-          <AppInfo bar_code='DEMOFS2020' />
+          <AppInfo bar_code='WILSON2020' />
       </div>
     )
   }
