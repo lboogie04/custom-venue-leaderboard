@@ -1,5 +1,6 @@
 import React from 'react';
 import Score from '../components/Score';
+import seahwaks from '../images/seahawks.jpg';
 
 class ScoreContainer extends React.Component {
 
@@ -7,7 +8,8 @@ class ScoreContainer extends React.Component {
     const { platform } = this.props;
     console.log(window.location.href);
 
-    if (platform === 'xfinity') return (<div className='x1-container'><iframe width="1210" height="750" src="https://www.youtube.com/embed/Bru8AddADvo?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
+    // if (platform === 'xfinity') return (<div className='x1-container'><iframe width="1210" height="750" src="https://www.youtube.com/embed/Bru8AddADvo?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
+    if (platform === 'xfinity') return (<div className='x1-container'><img src={seahwaks}/></div>)
     return (
       <div className='score-container'>
         <Score />

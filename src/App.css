@@ -223,8 +223,12 @@
   background-position: center;
   padding: 0px;
   height: 80vh;
+  overflow: hidden;
 }
 
+.x1-container img {
+  width: 100%;
+}
 
 
 
