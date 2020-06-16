@@ -1,6 +1,6 @@
 import React from 'react';
 import Score from '../components/Score';
-import seahwaks from '../images/seahawks.jpg';
+import dak from '../images/dak.jpg';
 
 class ScoreContainer extends React.Component {
 
@@ -9,7 +9,7 @@ class ScoreContainer extends React.Component {
     console.log(window.location.href);
 
     // if (platform === 'xfinity') return (<div className='x1-container'><iframe width="1210" height="750" src="https://www.youtube.com/embed/Bru8AddADvo?start=12" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>)
-    if (platform === 'xfinity') return (<div className='x1-container'></div>)
+    if (platform === 'xfinity') return (<div className='x1-container'><img src={dak} /></div>)
     return (
       <div className='score-container'>
         <Score />
