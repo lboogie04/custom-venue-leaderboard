@@ -402,12 +402,12 @@ li {
   }
 
   .prize-container-logo {
-    width: 150px;
+    width: 100px;
     padding-top: 10px;
   }
   .prize-container-logo-width {
-    width: 170px;
-    margin-top: 18px;
+    width: 100px;
+    margin-top: 10px;
   }
 
   .prize-score-box {

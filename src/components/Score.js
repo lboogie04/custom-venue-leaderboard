@@ -46,7 +46,7 @@ class Score extends React.Component {
     const url = 'https://gameon.app/api/v1/get_match';
     let fetchData = { 
       method: 'POST', 
-      body: {match_id: 10349},
+      body: {match_id: 10350},
       headers: new Headers()
     }
 
@@ -141,7 +141,7 @@ class Score extends React.Component {
         <Row className='teams'>
          <Col xs={5}>
            <Row className='team-block'>
-           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/San_Francisco_49ers_logo.svg/460px-San_Francisco_49ers_logo.svg.png" className="team-logo-vertical" alt="gameon-logo" />
+           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Dallas_Cowboys.svg/1200px-Dallas_Cowboys.svg.png" className="team-logo-vertical" alt="gameon-logo" />
            </Row>
            <Row className='score-block'> <span>{this.state.match.AwayScore || this.state.match.visitor_team_points || 0}</span></Row>
          </Col>
@@ -155,7 +155,7 @@ class Score extends React.Component {
 
          <Col xs={5}>
            <Row className='team-block'>
-           <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Seattle_Seahawks_logo.svg/2880px-Seattle_Seahawks_logo.svg.png" className="team-logo" alt="gameon-logo" style={weirdLogo} />
+           <img src="https://static.www.nfl.com/image/private/t_q-best/league/d8m7hzpsbrl6pnqht8op" className="team-logo" alt="gameon-logo" style={weirdLogo} />
            </Row>
            <Row className='score-block'><span>{this.state.match.HomeScore || this.state.match.home_team_points || 0}</span></Row>
          </Col>
